@@ -1,0 +1,17 @@
+<?php
+session_start();
+if(!(isset($_SESSION['panier']))){
+$panier=array();
+}
+else{
+$panier=$_SESSION['panier'];
+}
+$index=count($panier);
+$panier[$index]['refProduit']=$_POST['refProduit'];
+$panier[$index]['prix']=$refProduit;
+$panier[$index]['quantite']=$_POST['quantite'];
+$panier[$index]['prix']=$_POST['prix'];
+$panier[$index]['designation']=$_POST['designation'];
+$_SESSION['panier']=$panier;
+header("location:index.php?panier=1");
+?>

@@ -1,0 +1,60 @@
+body{
+font-family:Georgia, "Times New Roman", Times,
+serif;
+font-size:12px;
+}
+#logo,#pub,#authentification
+{
+padding:5px;
+height:89px;
+border:1px dotted #000066;}
+
+#categories
+{
+border:1px dotted #000066
+;
+border-radius:10px 10px 10px 10px
+;
+min-height:400px
+;
+padding:10px
+;
+width:200px
+;
+}
+#contenu
+{
+border:1px dotted #000066
+;
+border-radius:10px 10px 10px 10px
+;
+min-height:400px
+;
+}
+#menu
+{
+border:1px dotted #000066;
+}
+#produit
+{
+border:1px dotted #000066;
+border-radius:10px 10px 10px 10px;
+float:left;
+margin:10px;
+padding:10px;
+min-height:140px;
+min-height:400px;
+padding:10px ;
+}
+
+a
+{
+text-decoration:none;
+color:#990000;
+padding:4px;
+}
+a:hover
+{
+border:1px solid #990000;
+background:#FFFF99;
+}
