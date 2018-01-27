@@ -1,60 +1,42 @@
+
 body{
-font-family:Georgia, "Times New Roman", Times,
-serif;
-font-size:12px;
+	background-color: white;
+	font-family: 'Open Sans',sans-serif;
 }
-#logo,#pub,#authentification
-{
-padding:5px;
-height:89px;
-border:1px dotted #000066;}
-
-#categories
-{
-border:1px dotted #000066
-;
-border-radius:10px 10px 10px 10px
-;
-min-height:400px
-;
-padding:10px
-;
-width:200px
-;
+h4{
+	color: pink;
+	font-weight: bold;
 }
-#contenu
-{
-border:1px dotted #000066
-;
-border-radius:10px 10px 10px 10px
-;
-min-height:400px
-;
-}
-#menu
-{
-border:1px dotted #000066;
-}
-#produit
-{
-border:1px dotted #000066;
-border-radius:10px 10px 10px 10px;
-float:left;
-margin:10px;
-padding:10px;
-min-height:140px;
-min-height:400px;
-padding:10px ;
+h4:hover{
+	color: rgba(224,102,27,0.5);
+	font-weight: bold;
+	
 }
 
-a
-{
-text-decoration:none;
-color:#990000;
-padding:4px;
+.
+ h1{
+  font-size: 52px;
+  color: rgb(224,102,27); 
+  text-shadow: 0 0 20px rgba(0,0,0,0.8);
+  font-weight: lighter;
+  text-align: center;
 }
-a:hover
+
+ h2{
+  /*text-shadow: 0 0 20px rgba(0,0,0,0.8);*/
+  padding: 0.2em;
+  font-size: 32px;
+  color: Fuchsia;
+  /*font-weight: lighter;*/
+  /*letter-spacing: 2px;*/
+  background-color: Silver;
+}
+h3
 {
-border:1px solid #990000;
-background:#FFFF99;
+  /*text-shadow: 0 0 20px rgba(0,0,0,0.8);*/
+  /*padding: 0.2em;*/
+  /*font-size: 28px;*/
+  /*color: rgb(20,148,20);*/
+  /*font-weight: lighter;*/
+  *letter-spacing: 2px*
 }
