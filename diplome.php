@@ -87,7 +87,7 @@ if (isset($_GET['sup'])){
 						<?php 
 							$n=1;
 							if (isset($_SESSION['codeuse'])) {
-								# code...
+							
 								$list=" SELECT codeuses.id, etablissement, diplome, datediplome, diplomes.id FROM diplomes INNER JOIN codeuse ON codeuse.id=diplomes.id_codeuse WHERE codeuse.id=".$_SESSION['codeuse'];
 							$res= mysqli_query($link,$list);
 						while ($data = mysqli_fetch_array($res)){								

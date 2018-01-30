@@ -23,7 +23,7 @@
 					$data=mysqli_fetch_array($req);
 			
 					?>
-				 	<a href="dashboard.php"><img src="upload/<?php echo $data['photo']; ?>" style="width: 30px; height: 30px; border-radius: 50%; margin-top: -9px;"></a>
+				     <a href="dashboard.php"><img class="img-circle" src="upload/<?php echo $data['photo']; ?>" style="width: 30px; height: 30px; margin-top: 10px;"></a>
 
 				 	<?php
 					}				 
@@ -31,11 +31,12 @@
 				</li>
 				<li>
 				<form action="" method="POST">
-				<button class="btn" name="deconnexion" style="margin-top: 40px; color: red;">Deconnexion</button>
+				 <button class="btn" name="deconnexion" style="margin-top: 30px; "   ><a href="index.php" style="margin-top: 40px; color: red; text-decoration: none;">Deconnexion</a></button>
 				</form>
 				<?php 
 				if (isset($_POST['deconnexion'])) {
 				 session_destroy();
+
 				}				 
 				 ?>	
 			</li>

@@ -46,7 +46,7 @@ if (isset($_POST['modif'])){
 		<div class="col-sm-6">
 				<form  role=form action="" name="form1" method="Post" >
 				<legend>veuillez modifier votre cv</legend>
-			  <h3 style="color: blue"> <?php echo $modif;?> </h3>
+               <h3 style="color: blue"> <?php echo $modif;?> </h3>
 				<div class="form-group">
 					<label for=""> Nom </label>
 					<input type="text" name="nom" id="nom" value="" class="form-control" placeholder="" required="">

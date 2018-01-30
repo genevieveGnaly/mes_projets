@@ -1,7 +1,11 @@
 <?php 
 $msg="";
 if (isset($_POST['btnvalider'])){
-		$sql= "INSERT INTO cv (facebook, twitter, github, id_codeuse) VALUES ('".$_POST['facebook']."', '".$_POST['twitter']."', '".$_POST['github']."', '".$_SESSION['codeuse']."' )";
+		$sql= "INSERT INTO cv (facebook, twitter, github, id_codeuse)
+		 VALUES ('".$_POST['facebook']."', 
+		 '".$_POST['twitter']."',
+		  '".$_POST['github']."', 
+		  '".$_SESSION['codeuse']."' )";
 		$result=mysqli_query($link	,$sql);
 		if ($result) {
 			$msg='votre cv a été enregistré avec success';
@@ -39,7 +43,7 @@ if (isset($_POST['btnvalider'])){
 
 	
 			<form  role=form action="" name="form1" method="Post">
-				<legend style="color: blue; text-align: center t">vos liens reseaux sociaux</legend>
+				<legend class="legend" style="color: blue; text-align: center ">vos liens reseaux sociaux</legend>
 	         <h3 style="color: blue; text-align: center"> <?php echo $msg;?> </h3>
 				<div class="form-group">
 					
@@ -50,10 +54,10 @@ if (isset($_POST['btnvalider'])){
 				
 				<div class="form-group">
 					<label for="">twitter</label>
-					<input type="text" name="twiter" id="twiter" class="form-control"  placeholder="" required="">
+					<input type="text" name="twiter" id="twiter" class="form-control"  placeholder="votre lien facebook" required="">
 					<div class="form-group">
 					<label for="">github</label>
-					<input type="text" name="github" id="github" class="form-control"  placeholder="" required="">
+					<input type="text" name="github" id="github" class="form-control"  placeholder="votre lien github" required="">
 				</div>
                 <div><input type="submit" class="btn btn-block btn-lg btn-primary" id="btnvalider" value="valider" name="btnvalider"> </div>
 		 	

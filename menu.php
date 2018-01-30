@@ -20,7 +20,7 @@
 <div class="menu">
 	       <ul >
               <li style="list-style: none;"><a style="text-decoration: none; font-size: 25px" href="profile.php">modifier cv </a></li>
-              <li style="list-style: none;"><a style="text-decoration: none; font-size: 25px" href="cv.php">creer cv</a></li>
+              <li style="list-style: none;"><a style="text-decoration: none; font-size: 25px" href="cv.php">créer cv</a></li>
               <li style="list-style: none;"><a style="text-decoration: none; font-size: 25px" href="dashboard.php">afficher cv</a></li>
               <li style="list-style: none;"><a style="text-decoration: none; font-size: 25px" href="experience.php"> ajouter experience</a></li>
               <li style="list-style: none;"><a style="text-decoration: none; font-size: 25px" href="diplome.php">ajouter diplome</a></li>

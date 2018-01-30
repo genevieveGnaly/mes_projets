@@ -19,7 +19,7 @@ $msg="";
 					'".mysqli_real_escape_string($link,$_POST['resume'])."')";
 		$result=mysqli_query($link,$sql);
 		if ($result){
-		  $msg='felicitation vous êtes enregistré';
+		  $msg='felicitation vous êtes enregistrée';
 		}else{
 			$msg=mysqli_error($link);
 		}
@@ -39,7 +39,7 @@ $msg="";
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta neme="description" content="gestion de cv des codeuses de sheisthecode en ligne">
 		<meta name="author" content="GNALY GENEVIEVE">
-	 	<title>sheisthecode cv</title>
+	 	<title>INSCRIPTION</title>
 	    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
