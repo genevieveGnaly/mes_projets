@@ -1,7 +1,7 @@
 <?php 
 $msg="";
 	if (isset($_POST['btnvalider'])){
-		$sql= "INSERT INTO interets (titre, description, id_codeuse) VALUES ('".mysqli_real_escape_string($link,$_POST['titre'])."', '".$_POST['description']."', '".$_SESSION['codeuse']."')";
+		$sql= "INSERT INTO centredinteret (titre, description, id_codeuse) VALUES ('".mysqli_real_escape_string($link,$_POST['titre'])."', '".$_POST['description']."', '".$_SESSION['codeuse']."')"; 
 		if (isset($_GET['id'])){
 			$sql="UPDATE centredinteret SET titre='".mysqli_real_escape_string($link, $_POST['titre'])."', description='".$_POST['description']."', id_codeuse='".$_SESSION['codeuse']."' WHERE id=".$_GET['id']; 
  		}
@@ -13,12 +13,12 @@ $msg="";
 		}
 	}
 	if (isset($_GET['id'])){
-	$update="SELECT * FROM interets WHERE id=".$_GET['id'];
+	$update="SELECT * FROM centredinteret WHERE id=".$_GET['id'];
 	$res=mysqli_query($link, $update);
 	$dataU=mysqli_fetch_array($res);
 }
 if (isset($_GET['sup'])){
-	$delete="DELETE FROM interets WHERE id=".$_GET['sup'];
+	$delete="DELETE FROM centredinteret WHERE id=".$_GET['sup'];
 	$res=mysqli_query($link, $delete);
 } 
 ?>
@@ -49,7 +49,7 @@ if (isset($_GET['sup'])){
 		<div class="col-sm-9">
 	
 			<form  role=form action="" name="form1" method="Post" >
-				<legend>vos centres d'interet</legend>
+				<legend style="text-align: center;color: blue;">vos centres d'interet</legend>
 				<div class="form-group">
 					<label for=""> centres d'interet </label>
 					<input type="text" name="titre" id="interet" class="form-control" placeholder="" required="">
@@ -63,10 +63,7 @@ if (isset($_GET['sup'])){
           <div><input type="submit" class="btn btn-block btn-lg btn-primary" id="btnvalider" value="valider" name="btnvalider"> </div>
          		
 			</form>
-		<!-- </div> -->
-		<!-- <div class="row">
-				<div class="col-sm-3"></div>
-				<div class=" col-sm-6 "> -->
+	
 				<table class="table">
 					<thead>
 						<tr>

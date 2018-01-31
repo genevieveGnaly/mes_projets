@@ -44,8 +44,8 @@ if (isset($_POST['modif'])){
        	<?php include('menu.php'); ?>
        </div>
 		<div class="col-sm-6">
-				<form  role=form action="" name="form1" method="Post" >
-				<legend>veuillez modifier votre cv</legend>
+				<form  role=form action="" name="form1" method="Post" enctype="multipart/form-data">
+				<legend  style="text-align:center; font-size: 20px; color: blue;">veuillez modifier votre cv</legend>
                <h3 style="color: blue"> <?php echo $modif;?> </h3>
 				<div class="form-group">
 					<label for=""> Nom </label>

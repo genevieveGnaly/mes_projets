@@ -54,7 +54,7 @@ if (isset($_GET['sup'])){
        </div>
 		<div class="col-sm-9">
 	<form  role=form action="" name="form1" method="Post" enctype="multipart/form-data" >
-				<legend style="text-align:center; font-size: 20px;">diplomes</legend>
+				<legend style="text-align:center; font-size: 20px; color: blue;">diplomes</legend>
 				<div class="form-group">
 					<label for=""> ETABLISSEMENT </label>
 					<input type="text" name="etablissement" id="etablissement" class="form-control" placeholder=" le nom de l'etablissement de l'obtention du diplôme" required="">

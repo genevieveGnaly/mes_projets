@@ -61,8 +61,8 @@ if (isset($_GET['sup'])){
        </div>
 		<div class="col-sm-6">
 	
-			<form  role=form action="" name="form1" method="Post" enctype="multipart/form-data" >
-				<legend>vos experiences</legend>
+			<form  role=form action="" name="form1" method="Post"  >
+				<legend  style="text-align:center; font-size: 20px; color: blue;">vos experiences</legend>
 				<div class="form-group">
 					<label for="">organisation </label>
 					<input type="text" name="organisation" id="organisation" class="form-control" placeholder="" required="">
